@@ -66,6 +66,24 @@ Wanneer de Kinect nauwkeurig genoeg is gebleken kunnen we afstappen van de twee 
 #### Afbeelding 8: De schouderbewegingen om de painful arc te identificeren. 
 
 ![schouderoefening](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Body_Movements_I.jpg/506px-Body_Movements_I.jpg "Schouderoefening") 
+## 6 Oktober 2017 
 
+De afgelopen sprint zijn we weer volop  bezig geweest met de KINECT. De programmeurs van ons team hebben een programma geschreven zodat we op een gestructureerde wijze beelden kunnen opslaan vanuit de KINECT.
+Door in dit programma op ‘Start’ te klikken worden 2 files aangemaakt en een aparte map. Deze 2 files zijn een .xml file waarin alle skeleton joints ( gewrichten) worden opgeslagen, in de andere file wordt het opgenomen diepte beeld opgeslagen.
+#### AFBEELDING 9: KINECT PROGRAMMA VOOR OPSLAAN VAN DATA.
+![screenshot applicatie](https://user-images.githubusercontent.com/31738766/32054207-fb387924-ba5d-11e7-9423-39bae1b62d0a.PNG)
 
+Hierop hebben we zelf een test opname gemaakt van een groepslid. De data uit deze testopname hebben we kunnen verwerken d.m.v. Microsoft Excel. Hieruit konden we voorlopig de volgende grafieken laten zien:
+Bij vergelijking 1 heeft de persoon alleen zijn rechter arm zijwaarts omhoog bewogen. Je kunt hier zien in welke hoek de schouder zich bewoog afgezet tegen de tijd. 
+Uit deze grafiek kun je goed opmaken dat naar mate de tijd oploopt de hoek ook oploopt van pakweg 15 graden naar 120 graden. ( oranje lijn). De blauwe lijn die de linkerschouder aanduidt blijft gelijk. Dit klopt ook omdat deze arm niet bewogen is en dus langs het lichaam hangt.
+ 
+#### AFBEELDING 10: Vergelijking 1Hoek rechterschouder tegenover de tijd
+![afbeelding 11](https://user-images.githubusercontent.com/31738766/32054259-20dbe620-ba5e-11e7-99c2-3f0e7ab034da.png)
+In vergelijk 2 heeft de persoon beide armen zijwaarts bewogen. Je kunt goed zijn dat allebei de armen de hoek vergroot worden tegenover de tijd. Je kunt hier echter zien dat de persoon asymmetrisch heeft bewogen. De rechterarm ( oranje lijn) stagneert in het midden waarna hij daarna weer oploopt. Hieruit kun je aflezen dat de persoon op een moment zijn arm slomer omhoog heeft bewogen.
+ 
+#### AFBEELDING 11: Vergelijking 2Beide schouder tegenover de tijd
+![afbeelding 12](https://user-images.githubusercontent.com/31738766/32054264-257074f8-ba5e-11e7-9cd5-a93ef6178bc6.png)
 
+Na dit inzicht zijn we , op donderdag 28 Oktober,  met de KINECT en 2 videocamera’s opnames gaan maken op de Haagse Hogeschool in het Atrium (zoals beschreven in de test setup van het vorige github bericht).
+Er hebben in totaal van 61 personen , 3 verschillende schouder bewegingen opgenomen.  Dit heeft ons een hele berg ( echt héél veel ) data gegeven.
+Deze data is omgezet naar .csv bestandsoort zodat dit ingeladen kan worden in Python. De komende weken gaan we ons richten op het bewerken van al deze data in python. Denk hierbij vooral aan het opschonen van de verkregen data.
